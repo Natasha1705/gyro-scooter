@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: max-content;
+    margin: 0 auto;
+}
+
+        .done{
+            color: brown;
+        }
+
+        li{
+            display: flex;
+            gap: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner" id="conteiner">
+        <h1>Задание 12 недели</h1>
+        <h2>"ToDo List"</h2>
+        <input type="text" placeholder="Введите текст" id="input" value="">
+        <button id="btn">Добавить</button>
+        <ul id="list">
+            <li>
+                <span>text</span>
+                <div>[x]</div>
+            </li>
+        </ul>
+</div>
+    <script>
+        const inputField = document.getElementById('input')
+        const addButton = document.getElementById('btn')
+        const taskList = document.getElementById('list')
+
+        // const createElement = (inputValue) => {
+        //     const row = document.createElement('li')
+        //     const textWrapper = document.createElement('span')
+        //     textWrapper.textContent = inputValue
+
+        //     const deleteBtn = document.createElement('div')
+        //     deleteBtn = '[x]'
+
+        //     row.append(textWrapper, deleteBtn)
+        //     console.log('=====row=====',row );
+            
+        // }
+
+        // addButton.addEventListener('click',() => {
+        //     const value = inputField.value
+        //     const newRow = createElement(value)
+        //     taskList.append (newRow)
+        //     inputField.value = ''
+        // })
+
+        // taskList.addEventListener('click',(evt) =>{
+        //     evt.target.classList.toggle('done')
+        // })
+        
+        // const input = document.querySelector('#input')
+
+        // const inputField = document.getElementById('input')
+        // // console.log('=====input=====',input );
+        // const addButton = document.getElementById('btn')
+        // const taskList = document.getElementById('list')
+
+        // создаём элемент
+        // записываем в него значение из импута
+        // пихаем его в список
+        // очистить поле ввода
+
+        addButton.addEventListener('click',() => {
+            const newTask = document.createElement('li')
+            newTask.textContent = inputField.value
+            console.log('====newTask======',newTask );
+            taskList.append (newTask)
+            inputField.value = ''
+        })
+    </script>
+</body>
+</html>
