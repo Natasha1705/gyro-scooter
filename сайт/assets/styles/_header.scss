@@ -1,0 +1,25 @@
+.header{
+    background-color: #171717;
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+}
+
+.header__nav{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}

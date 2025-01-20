@@ -1,0 +1,22 @@
+@import '_header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: $font-family;
+}
+
+body {
+    // font-family: Arial, sans-serif;
+    // background-color: $background-color;    #121212
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
